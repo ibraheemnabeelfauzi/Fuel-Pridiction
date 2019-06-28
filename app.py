@@ -11,4 +11,7 @@ if request.method == 'POST':
    name = request.form.get('name')
    post = request.form.get('post')
    creat_post(name, post)
-        return render_template('index.html')
+
+posts = get_posts()
+
+        return render_template('index.html', posts=posts)
