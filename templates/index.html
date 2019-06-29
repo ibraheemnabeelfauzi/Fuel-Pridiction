@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <body>
+        
+        <form action='/' method='post'>
+            <input placeholder='CompetitorRate' name=''>
+            <input placeholder='clientLocation' name=''>
+            <input placeholder='SeasonRateFluctuation' name=''>
+            <input placeholder='CompetitorRate' name=''>
+        <input type ='submit' value='Submit'>
+        </form>
+        {% for post in posts %}
+        <div>{{ post[1] + ': ' post [2] }}</div>
+        {% endfor %}
+
+</body>
+</html>
